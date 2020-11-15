@@ -1,0 +1,1753 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 1600 1600 0    50   ~ 0
+Mounting holes
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5FC0D03D
+P 1900 1850
+AR Path="/5FC50B89/5FC0D03D" Ref="H?"  Part="1" 
+AR Path="/5FC0C355/5FC0D03D" Ref="H1001"  Part="1" 
+F 0 "H1001" H 2000 1896 50  0000 L CNN
+F 1 "MountingHole" H 2000 1805 50  0000 L CNN
+F 2 "SH-ESP32:MountingHole_3.2mm_M3_Unplated" H 1900 1850 50  0001 C CNN
+F 3 "~" H 1900 1850 50  0001 C CNN
+	1    1900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5FC0D043
+P 1900 2150
+AR Path="/5FC50B89/5FC0D043" Ref="H?"  Part="1" 
+AR Path="/5FC0C355/5FC0D043" Ref="H1002"  Part="1" 
+F 0 "H1002" H 2000 2196 50  0000 L CNN
+F 1 "MountingHole" H 2000 2105 50  0000 L CNN
+F 2 "SH-ESP32:MountingHole_3.2mm_M3_Unplated" H 1900 2150 50  0001 C CNN
+F 3 "~" H 1900 2150 50  0001 C CNN
+	1    1900 2150
+	1    0    0    -1  
+$EndComp
+Text Notes 3450 1350 0    50   ~ 0
+Decoupling caps
+Wire Wire Line
+	3600 1850 3600 2050
+Connection ~ 3600 2050
+Connection ~ 3900 1850
+Wire Wire Line
+	3900 1850 3900 1650
+Connection ~ 3900 2050
+Wire Wire Line
+	3900 2050 3900 1850
+$Comp
+L power:+3.3V #PWR01002
+U 1 1 5FC15C1D
+P 3900 1650
+F 0 "#PWR01002" H 3900 1500 50  0001 C CNN
+F 1 "+3.3V" H 3915 1823 50  0000 C CNN
+F 2 "" H 3900 1650 50  0001 C CNN
+F 3 "" H 3900 1650 50  0001 C CNN
+	1    3900 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01001
+U 1 1 5FC16750
+P 3600 5850
+F 0 "#PWR01001" H 3600 5600 50  0001 C CNN
+F 1 "GND" H 3605 5677 50  0000 C CNN
+F 2 "" H 3600 5850 50  0001 C CNN
+F 3 "" H 3600 5850 50  0001 C CNN
+	1    3600 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR01004
+U 1 1 5FC3792B
+P 4700 1650
+F 0 "#PWR01004" H 4700 1500 50  0001 C CNN
+F 1 "+3.3V" H 4715 1823 50  0000 C CNN
+F 2 "" H 4700 1650 50  0001 C CNN
+F 3 "" H 4700 1650 50  0001 C CNN
+	1    4700 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01003
+U 1 1 5FC39BF1
+P 4400 3550
+F 0 "#PWR01003" H 4400 3300 50  0001 C CNN
+F 1 "GND" H 4405 3377 50  0000 C CNN
+F 2 "" H 4400 3550 50  0001 C CNN
+F 3 "" H 4400 3550 50  0001 C CNN
+	1    4400 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FB71853
+P 6550 4950
+AR Path="/5FC3847D/5FB71853" Ref="#PWR?"  Part="1" 
+AR Path="/5FC0C355/5FB71853" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 6550 4700 50  0001 C CNN
+F 1 "GND" H 6555 4777 50  0000 C CNN
+F 2 "" H 6550 4950 50  0001 C CNN
+F 3 "" H 6550 4950 50  0001 C CNN
+	1    6550 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x13_Odd_Even J?
+U 1 1 5FB7185A
+P 6800 2700
+AR Path="/5FC3847D/5FB7185A" Ref="J?"  Part="1" 
+AR Path="/5FC0C355/5FB7185A" Ref="J201"  Part="1" 
+F 0 "J201" H 6850 3517 50  0000 C CNN
+F 1 "GPIO" H 6850 3426 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x13_P2.54mm_Vertical" H 6800 2700 50  0001 C CNN
+F 3 "~" H 6800 2700 50  0001 C CNN
+F 4 "C358701" H 6800 2700 50  0001 C CNN "LCSC"
+	1    6800 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6550 4550
+Wire Wire Line
+	6550 4550 6550 4450
+Connection ~ 6550 4450
+Wire Wire Line
+	6550 4450 6550 4350
+Connection ~ 6550 4350
+Wire Wire Line
+	6550 4350 6550 4250
+Connection ~ 7050 4250
+Wire Wire Line
+	7050 4250 7050 4350
+Connection ~ 7050 4350
+Wire Wire Line
+	7050 4350 7050 4450
+Connection ~ 7050 4450
+Wire Wire Line
+	7050 4450 7050 4550
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J?
+U 1 1 5FB7186D
+P 6750 4350
+AR Path="/5FC3847D/5FB7186D" Ref="J?"  Part="1" 
+AR Path="/5FC0C355/5FB7186D" Ref="J202"  Part="1" 
+F 0 "J202" H 6600 4700 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 6600 4600 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 6750 4350 50  0001 C CNN
+F 3 "~" H 6750 4350 50  0001 C CNN
+F 4 "C358699" H 6750 4350 50  0001 C CNN "LCSC"
+	1    6750 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4550 6550 4950
+Wire Wire Line
+	7050 4000 7050 4250
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FB71890
+P 7050 4000
+AR Path="/5FC3847D/5FB71890" Ref="#PWR?"  Part="1" 
+AR Path="/5FC0C355/5FB71890" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 7050 3850 50  0001 C CNN
+F 1 "+3.3V" H 7065 4173 50  0000 C CNN
+F 2 "" H 7050 4000 50  0001 C CNN
+F 3 "" H 7050 4000 50  0001 C CNN
+	1    7050 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5FB71897
+P 7450 1200
+AR Path="/5FC3847D/5FB71897" Ref="J?"  Part="1" 
+AR Path="/5F6FAF6E/5FB71897" Ref="J?"  Part="1" 
+AR Path="/5FC0C355/5FB71897" Ref="J204"  Part="1" 
+F 0 "J204" H 7530 1192 50  0000 L CNN
+F 1 "Conn_01x02" H 7530 1101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7450 1200 50  0001 C CNN
+F 3 "~" H 7450 1200 50  0001 C CNN
+F 4 "C376075" H 7450 1200 50  0001 C CNN "LCSC"
+	1    7450 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FB7189D
+P 6350 1200
+AR Path="/5FC3847D/5FB7189D" Ref="#PWR?"  Part="1" 
+AR Path="/5F6FAF6E/5FB7189D" Ref="#PWR?"  Part="1" 
+AR Path="/5FC0C355/5FB7189D" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 6350 950 50  0001 C CNN
+F 1 "GND" H 6355 1027 50  0000 C CNN
+F 2 "" H 6350 1200 50  0001 C CNN
+F 3 "" H 6350 1200 50  0001 C CNN
+	1    6350 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 1200 7250 1200
+Text Label 7050 1300 2    50   ~ 0
+Vin_protected
+Wire Wire Line
+	7250 1300 7050 1300
+$Comp
+L Device:C C?
+U 1 1 5FC0F391
+P 3750 2050
+AR Path="/5D6F1C7C/5FC0F391" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FC0F391" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FC0F391" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FC0F391" Ref="C202"  Part="1" 
+F 0 "C202" V 3650 2150 50  0000 L CNN
+F 1 "100nF" V 3650 1750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 1900 50  0001 C CNN
+F 3 "~" H 3750 2050 50  0001 C CNN
+F 4 "C1525" H 3750 2050 50  0001 C CNN "LCSC"
+	1    3750 2050
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FC0EFBF
+P 3750 1850
+AR Path="/5D6F1C7C/5FC0EFBF" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FC0EFBF" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FC0EFBF" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FC0EFBF" Ref="C201"  Part="1" 
+F 0 "C201" V 3650 1950 50  0000 L CNN
+F 1 "100nF" V 3650 1550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 1700 50  0001 C CNN
+F 3 "~" H 3750 1850 50  0001 C CNN
+F 4 "C1525" H 3750 1850 50  0001 C CNN "LCSC"
+	1    3750 1850
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3900 2050 3900 2250
+Wire Wire Line
+	3600 2050 3600 2250
+$Comp
+L Device:C C?
+U 1 1 5FBA647D
+P 3750 2250
+AR Path="/5D6F1C7C/5FBA647D" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBA647D" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBA647D" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBA647D" Ref="C203"  Part="1" 
+F 0 "C203" V 3650 2350 50  0000 L CNN
+F 1 "100nF" V 3650 1950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 2100 50  0001 C CNN
+F 3 "~" H 3750 2250 50  0001 C CNN
+F 4 "C1525" H 3750 2250 50  0001 C CNN "LCSC"
+	1    3750 2250
+	0    -1   1    0   
+$EndComp
+Connection ~ 3600 2250
+Wire Wire Line
+	3600 2250 3600 2450
+Connection ~ 3900 2250
+Wire Wire Line
+	3900 2250 3900 2450
+$Comp
+L Device:C C?
+U 1 1 5FBA6AE0
+P 3750 2450
+AR Path="/5D6F1C7C/5FBA6AE0" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBA6AE0" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBA6AE0" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBA6AE0" Ref="C204"  Part="1" 
+F 0 "C204" V 3650 2550 50  0000 L CNN
+F 1 "100nF" V 3650 2150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 2300 50  0001 C CNN
+F 3 "~" H 3750 2450 50  0001 C CNN
+F 4 "C1525" H 3750 2450 50  0001 C CNN "LCSC"
+	1    3750 2450
+	0    -1   1    0   
+$EndComp
+Connection ~ 3600 2450
+Wire Wire Line
+	3600 2450 3600 2650
+Connection ~ 3900 2450
+Wire Wire Line
+	3900 2450 3900 2650
+$Comp
+L Device:C C?
+U 1 1 5FBA71B5
+P 3750 2650
+AR Path="/5D6F1C7C/5FBA71B5" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBA71B5" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBA71B5" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBA71B5" Ref="C205"  Part="1" 
+F 0 "C205" V 3650 2750 50  0000 L CNN
+F 1 "100nF" V 3650 2350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 2500 50  0001 C CNN
+F 3 "~" H 3750 2650 50  0001 C CNN
+F 4 "C1525" H 3750 2650 50  0001 C CNN "LCSC"
+	1    3750 2650
+	0    -1   1    0   
+$EndComp
+Connection ~ 3600 2650
+Wire Wire Line
+	3600 2650 3600 2850
+Connection ~ 3900 2650
+Wire Wire Line
+	3900 2650 3900 2850
+$Comp
+L Device:C C?
+U 1 1 5FBA7872
+P 3750 2850
+AR Path="/5D6F1C7C/5FBA7872" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBA7872" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBA7872" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBA7872" Ref="C206"  Part="1" 
+F 0 "C206" V 3650 2950 50  0000 L CNN
+F 1 "100nF" V 3650 2550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 2700 50  0001 C CNN
+F 3 "~" H 3750 2850 50  0001 C CNN
+F 4 "C1525" H 3750 2850 50  0001 C CNN "LCSC"
+	1    3750 2850
+	0    -1   1    0   
+$EndComp
+Connection ~ 3600 2850
+Wire Wire Line
+	3600 2850 3600 3050
+Connection ~ 3900 2850
+Wire Wire Line
+	3900 2850 3900 3050
+$Comp
+L Device:C C?
+U 1 1 5FBA7F8F
+P 3750 3050
+AR Path="/5D6F1C7C/5FBA7F8F" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBA7F8F" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBA7F8F" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBA7F8F" Ref="C207"  Part="1" 
+F 0 "C207" V 3650 3150 50  0000 L CNN
+F 1 "100nF" V 3650 2750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 2900 50  0001 C CNN
+F 3 "~" H 3750 3050 50  0001 C CNN
+F 4 "C1525" H 3750 3050 50  0001 C CNN "LCSC"
+	1    3750 3050
+	0    -1   1    0   
+$EndComp
+Connection ~ 3600 3050
+Wire Wire Line
+	3600 3050 3600 3250
+Connection ~ 3900 3050
+Wire Wire Line
+	3900 3050 3900 3250
+$Comp
+L Device:C C?
+U 1 1 5FBA8544
+P 3750 3250
+AR Path="/5D6F1C7C/5FBA8544" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBA8544" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBA8544" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBA8544" Ref="C208"  Part="1" 
+F 0 "C208" V 3650 3350 50  0000 L CNN
+F 1 "100nF" V 3650 2950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 3100 50  0001 C CNN
+F 3 "~" H 3750 3250 50  0001 C CNN
+F 4 "C1525" H 3750 3250 50  0001 C CNN "LCSC"
+	1    3750 3250
+	0    -1   1    0   
+$EndComp
+Connection ~ 3600 3250
+Wire Wire Line
+	3600 3250 3600 3450
+Connection ~ 3900 3250
+Wire Wire Line
+	3900 3250 3900 3450
+$Comp
+L Device:C C?
+U 1 1 5FBA8AE1
+P 3750 3450
+AR Path="/5D6F1C7C/5FBA8AE1" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBA8AE1" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBA8AE1" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBA8AE1" Ref="C209"  Part="1" 
+F 0 "C209" V 3650 3550 50  0000 L CNN
+F 1 "100nF" V 3650 3150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 3300 50  0001 C CNN
+F 3 "~" H 3750 3450 50  0001 C CNN
+F 4 "C1525" H 3750 3450 50  0001 C CNN "LCSC"
+	1    3750 3450
+	0    -1   1    0   
+$EndComp
+Connection ~ 3600 3450
+Wire Wire Line
+	3600 3450 3600 3650
+Connection ~ 3900 3450
+Wire Wire Line
+	3900 3450 3900 3650
+$Comp
+L Device:C C?
+U 1 1 5FBA916E
+P 3750 3650
+AR Path="/5D6F1C7C/5FBA916E" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBA916E" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBA916E" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBA916E" Ref="C210"  Part="1" 
+F 0 "C210" V 3650 3750 50  0000 L CNN
+F 1 "100nF" V 3650 3350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 3500 50  0001 C CNN
+F 3 "~" H 3750 3650 50  0001 C CNN
+F 4 "C1525" H 3750 3650 50  0001 C CNN "LCSC"
+	1    3750 3650
+	0    -1   1    0   
+$EndComp
+Connection ~ 3600 3650
+Connection ~ 3900 3650
+Wire Wire Line
+	3600 3650 3600 3850
+Wire Wire Line
+	3900 3650 3900 3850
+$Comp
+L Device:C C?
+U 1 1 5FBAAD71
+P 3750 3850
+AR Path="/5D6F1C7C/5FBAAD71" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBAAD71" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBAAD71" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBAAD71" Ref="C211"  Part="1" 
+F 0 "C211" V 3650 3950 50  0000 L CNN
+F 1 "100nF" V 3650 3550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 3700 50  0001 C CNN
+F 3 "~" H 3750 3850 50  0001 C CNN
+F 4 "C1525" H 3750 3850 50  0001 C CNN "LCSC"
+	1    3750 3850
+	0    -1   1    0   
+$EndComp
+Connection ~ 3600 3850
+Wire Wire Line
+	3600 3850 3600 4050
+Connection ~ 3900 3850
+Wire Wire Line
+	3900 3850 3900 4050
+$Comp
+L Device:C C?
+U 1 1 5FBAB2AE
+P 3750 4050
+AR Path="/5D6F1C7C/5FBAB2AE" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBAB2AE" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBAB2AE" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBAB2AE" Ref="C212"  Part="1" 
+F 0 "C212" V 3650 4150 50  0000 L CNN
+F 1 "100nF" V 3650 3750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 3900 50  0001 C CNN
+F 3 "~" H 3750 4050 50  0001 C CNN
+F 4 "C1525" H 3750 4050 50  0001 C CNN "LCSC"
+	1    3750 4050
+	0    -1   1    0   
+$EndComp
+Connection ~ 3600 4050
+Wire Wire Line
+	3600 4050 3600 4250
+Connection ~ 3900 4050
+Wire Wire Line
+	3900 4050 3900 4250
+$Comp
+L Device:C C?
+U 1 1 5FBAB7BB
+P 3750 4250
+AR Path="/5D6F1C7C/5FBAB7BB" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBAB7BB" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBAB7BB" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBAB7BB" Ref="C213"  Part="1" 
+F 0 "C213" V 3650 4350 50  0000 L CNN
+F 1 "100nF" V 3650 3950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 4100 50  0001 C CNN
+F 3 "~" H 3750 4250 50  0001 C CNN
+F 4 "C1525" H 3750 4250 50  0001 C CNN "LCSC"
+	1    3750 4250
+	0    -1   1    0   
+$EndComp
+Connection ~ 3600 4250
+Wire Wire Line
+	3600 4250 3600 4450
+Connection ~ 3900 4250
+Wire Wire Line
+	3900 4250 3900 4450
+$Comp
+L Device:C C?
+U 1 1 5FBABDB8
+P 3750 4450
+AR Path="/5D6F1C7C/5FBABDB8" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBABDB8" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBABDB8" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBABDB8" Ref="C214"  Part="1" 
+F 0 "C214" V 3650 4550 50  0000 L CNN
+F 1 "100nF" V 3650 4150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 4300 50  0001 C CNN
+F 3 "~" H 3750 4450 50  0001 C CNN
+F 4 "C1525" H 3750 4450 50  0001 C CNN "LCSC"
+	1    3750 4450
+	0    -1   1    0   
+$EndComp
+Connection ~ 3600 4450
+Wire Wire Line
+	3600 4450 3600 4650
+Connection ~ 3900 4450
+Wire Wire Line
+	3900 4450 3900 4650
+$Comp
+L Device:C C?
+U 1 1 5FBAC2AD
+P 3750 4650
+AR Path="/5D6F1C7C/5FBAC2AD" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBAC2AD" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBAC2AD" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBAC2AD" Ref="C215"  Part="1" 
+F 0 "C215" V 3650 4750 50  0000 L CNN
+F 1 "100nF" V 3650 4350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 4500 50  0001 C CNN
+F 3 "~" H 3750 4650 50  0001 C CNN
+F 4 "C1525" H 3750 4650 50  0001 C CNN "LCSC"
+	1    3750 4650
+	0    -1   1    0   
+$EndComp
+Connection ~ 3600 4650
+Wire Wire Line
+	3600 4650 3600 4850
+Connection ~ 3900 4650
+Wire Wire Line
+	3900 4650 3900 4850
+$Comp
+L Device:C C?
+U 1 1 5FBAC6CA
+P 3750 4850
+AR Path="/5D6F1C7C/5FBAC6CA" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBAC6CA" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBAC6CA" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBAC6CA" Ref="C216"  Part="1" 
+F 0 "C216" V 3650 4950 50  0000 L CNN
+F 1 "100nF" V 3650 4550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 4700 50  0001 C CNN
+F 3 "~" H 3750 4850 50  0001 C CNN
+F 4 "C1525" H 3750 4850 50  0001 C CNN "LCSC"
+	1    3750 4850
+	0    -1   1    0   
+$EndComp
+Connection ~ 3600 4850
+Wire Wire Line
+	3600 4850 3600 5050
+Connection ~ 3900 4850
+Wire Wire Line
+	3900 4850 3900 5050
+$Comp
+L Device:C C?
+U 1 1 5FBACB5F
+P 3750 5050
+AR Path="/5D6F1C7C/5FBACB5F" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBACB5F" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBACB5F" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBACB5F" Ref="C217"  Part="1" 
+F 0 "C217" V 3650 5150 50  0000 L CNN
+F 1 "100nF" V 3650 4750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 4900 50  0001 C CNN
+F 3 "~" H 3750 5050 50  0001 C CNN
+F 4 "C1525" H 3750 5050 50  0001 C CNN "LCSC"
+	1    3750 5050
+	0    -1   1    0   
+$EndComp
+Connection ~ 3600 5050
+Wire Wire Line
+	3600 5050 3600 5250
+Connection ~ 3900 5050
+Wire Wire Line
+	3900 5050 3900 5250
+$Comp
+L Device:C C?
+U 1 1 5FBAD03C
+P 3750 5250
+AR Path="/5D6F1C7C/5FBAD03C" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBAD03C" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBAD03C" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBAD03C" Ref="C218"  Part="1" 
+F 0 "C218" V 3650 5350 50  0000 L CNN
+F 1 "100nF" V 3650 4950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 5100 50  0001 C CNN
+F 3 "~" H 3750 5250 50  0001 C CNN
+F 4 "C1525" H 3750 5250 50  0001 C CNN "LCSC"
+	1    3750 5250
+	0    -1   1    0   
+$EndComp
+Connection ~ 3600 5250
+Wire Wire Line
+	3600 5250 3600 5450
+Connection ~ 3900 5250
+Wire Wire Line
+	3900 5250 3900 5450
+$Comp
+L Device:C C?
+U 1 1 5FBAD591
+P 3750 5450
+AR Path="/5D6F1C7C/5FBAD591" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBAD591" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBAD591" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBAD591" Ref="C219"  Part="1" 
+F 0 "C219" V 3650 5550 50  0000 L CNN
+F 1 "100nF" V 3650 5150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 5300 50  0001 C CNN
+F 3 "~" H 3750 5450 50  0001 C CNN
+F 4 "C1525" H 3750 5450 50  0001 C CNN "LCSC"
+	1    3750 5450
+	0    -1   1    0   
+$EndComp
+Connection ~ 3600 5450
+Wire Wire Line
+	3600 5450 3600 5650
+Connection ~ 3900 5450
+Wire Wire Line
+	3900 5450 3900 5650
+$Comp
+L Device:C C?
+U 1 1 5FBADCAE
+P 3750 5650
+AR Path="/5D6F1C7C/5FBADCAE" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBADCAE" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBADCAE" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBADCAE" Ref="C220"  Part="1" 
+F 0 "C220" V 3650 5750 50  0000 L CNN
+F 1 "100nF" V 3650 5350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3788 5500 50  0001 C CNN
+F 3 "~" H 3750 5650 50  0001 C CNN
+F 4 "C1525" H 3750 5650 50  0001 C CNN "LCSC"
+	1    3750 5650
+	0    -1   1    0   
+$EndComp
+Connection ~ 3600 5650
+Wire Wire Line
+	3600 5650 3600 5850
+Wire Wire Line
+	4400 1850 4400 2050
+$Comp
+L Device:C C?
+U 1 1 5FBAE850
+P 4550 2050
+AR Path="/5D6F1C7C/5FBAE850" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBAE850" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBAE850" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBAE850" Ref="C222"  Part="1" 
+F 0 "C222" V 4450 2150 50  0000 L CNN
+F 1 "100nF" V 4450 1750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4588 1900 50  0001 C CNN
+F 3 "~" H 4550 2050 50  0001 C CNN
+F 4 "C1525" H 4550 2050 50  0001 C CNN "LCSC"
+	1    4550 2050
+	0    -1   1    0   
+$EndComp
+Connection ~ 4400 2050
+Wire Wire Line
+	4400 2050 4400 2250
+Connection ~ 4700 2050
+Wire Wire Line
+	4700 2050 4700 2250
+$Comp
+L Device:C C?
+U 1 1 5FBAECE5
+P 4550 2250
+AR Path="/5D6F1C7C/5FBAECE5" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBAECE5" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBAECE5" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBAECE5" Ref="C223"  Part="1" 
+F 0 "C223" V 4450 2350 50  0000 L CNN
+F 1 "100nF" V 4450 1950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4588 2100 50  0001 C CNN
+F 3 "~" H 4550 2250 50  0001 C CNN
+F 4 "C1525" H 4550 2250 50  0001 C CNN "LCSC"
+	1    4550 2250
+	0    -1   1    0   
+$EndComp
+Connection ~ 4400 2250
+Wire Wire Line
+	4400 2250 4400 2450
+Connection ~ 4700 2250
+Wire Wire Line
+	4700 2250 4700 2450
+$Comp
+L Device:C C?
+U 1 1 5FBAF072
+P 4550 2450
+AR Path="/5D6F1C7C/5FBAF072" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBAF072" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBAF072" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBAF072" Ref="C224"  Part="1" 
+F 0 "C224" V 4450 2550 50  0000 L CNN
+F 1 "100nF" V 4450 2150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4588 2300 50  0001 C CNN
+F 3 "~" H 4550 2450 50  0001 C CNN
+F 4 "C1525" H 4550 2450 50  0001 C CNN "LCSC"
+	1    4550 2450
+	0    -1   1    0   
+$EndComp
+Connection ~ 4400 2450
+Wire Wire Line
+	4400 2450 4400 2650
+Connection ~ 4700 2450
+Wire Wire Line
+	4700 2450 4700 2650
+$Comp
+L Device:C C?
+U 1 1 5FBAF447
+P 4550 2650
+AR Path="/5D6F1C7C/5FBAF447" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBAF447" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBAF447" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBAF447" Ref="C225"  Part="1" 
+F 0 "C225" V 4450 2750 50  0000 L CNN
+F 1 "100nF" V 4450 2350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4588 2500 50  0001 C CNN
+F 3 "~" H 4550 2650 50  0001 C CNN
+F 4 "C1525" H 4550 2650 50  0001 C CNN "LCSC"
+	1    4550 2650
+	0    -1   1    0   
+$EndComp
+Connection ~ 4400 2650
+Wire Wire Line
+	4400 2650 4400 2850
+Connection ~ 4700 2650
+Wire Wire Line
+	4700 2650 4700 2850
+$Comp
+L Device:C C?
+U 1 1 5FBAFA14
+P 4550 2850
+AR Path="/5D6F1C7C/5FBAFA14" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBAFA14" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBAFA14" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBAFA14" Ref="C226"  Part="1" 
+F 0 "C226" V 4450 2950 50  0000 L CNN
+F 1 "100nF" V 4450 2550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4588 2700 50  0001 C CNN
+F 3 "~" H 4550 2850 50  0001 C CNN
+F 4 "C1525" H 4550 2850 50  0001 C CNN "LCSC"
+	1    4550 2850
+	0    -1   1    0   
+$EndComp
+Connection ~ 4400 2850
+Connection ~ 4700 2850
+$Comp
+L Device:C C?
+U 1 1 5FBB0208
+P 4550 3250
+AR Path="/5D6F1C7C/5FBB0208" Ref="C?"  Part="1" 
+AR Path="/5C348474/5FBB0208" Ref="C?"  Part="1" 
+AR Path="/5F733BA4/5FBB0208" Ref="C?"  Part="1" 
+AR Path="/5FC0C355/5FBB0208" Ref="C228"  Part="1" 
+F 0 "C228" V 4450 3350 50  0000 L CNN
+F 1 "100nF" V 4450 2950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4588 3100 50  0001 C CNN
+F 3 "~" H 4550 3250 50  0001 C CNN
+F 4 "C1525" H 4550 3250 50  0001 C CNN "LCSC"
+	1    4550 3250
+	0    -1   1    0   
+$EndComp
+Connection ~ 4400 3250
+Wire Wire Line
+	4400 3250 4400 3550
+Text Label 6600 2100 2    50   ~ 0
+EN
+Text Label 6600 2200 2    50   ~ 0
+VP
+Text Label 6600 2300 2    50   ~ 0
+VN
+Text Label 6600 2400 2    50   ~ 0
+IO34
+Text Label 6600 2500 2    50   ~ 0
+IO35
+Text Label 6600 2600 2    50   ~ 0
+IO32
+Text Label 6600 2700 2    50   ~ 0
+IO33
+Text Label 6600 2800 2    50   ~ 0
+IO25
+Text Label 6600 2900 2    50   ~ 0
+IO26
+Text Label 6600 3000 2    50   ~ 0
+IO27
+Text Label 6600 3100 2    50   ~ 0
+IO14
+Text Label 6600 3200 2    50   ~ 0
+IO12
+Text Label 6600 3300 2    50   ~ 0
+IO13
+Text Label 7100 2100 0    50   ~ 0
+IO23
+Text Label 7100 2200 0    50   ~ 0
+IO22
+Text Label 7100 2300 0    50   ~ 0
+IO01
+Text Label 7100 2400 0    50   ~ 0
+IO03
+Text Label 7100 2500 0    50   ~ 0
+IO21
+Text Label 7100 2600 0    50   ~ 0
+IO19
+Text Label 7100 2700 0    50   ~ 0
+IO18
+Text Label 7100 2800 0    50   ~ 0
+IO05
+Text Label 7100 2900 0    50   ~ 0
+IO17
+Text Label 7100 3000 0    50   ~ 0
+IO16
+Text Label 7100 3100 0    50   ~ 0
+IO04
+Text Label 7100 3200 0    50   ~ 0
+IO02
+Text Label 7100 3300 0    50   ~ 0
+IO15
+$Comp
+L Connector_Generic:Conn_02x13_Odd_Even J?
+U 1 1 5FBF3E5E
+P 8000 2700
+AR Path="/5FC3847D/5FBF3E5E" Ref="J?"  Part="1" 
+AR Path="/5FC0C355/5FBF3E5E" Ref="J203"  Part="1" 
+F 0 "J203" H 8050 3517 50  0000 C CNN
+F 1 "GPIO" H 8050 3426 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x13_P2.54mm_Vertical" H 8000 2700 50  0001 C CNN
+F 3 "~" H 8000 2700 50  0001 C CNN
+F 4 "C358701" H 8000 2700 50  0001 C CNN "LCSC"
+	1    8000 2700
+	1    0    0    -1  
+$EndComp
+Text Label 7800 2100 2    50   ~ 0
+EN
+Text Label 7800 2200 2    50   ~ 0
+VP
+Text Label 7800 2300 2    50   ~ 0
+VN
+Text Label 7800 2400 2    50   ~ 0
+IO34
+Text Label 7800 2500 2    50   ~ 0
+IO35
+Text Label 7800 2600 2    50   ~ 0
+IO32
+Text Label 7800 2700 2    50   ~ 0
+IO33
+Text Label 7800 2800 2    50   ~ 0
+IO25
+Text Label 7800 2900 2    50   ~ 0
+IO26
+Text Label 7800 3000 2    50   ~ 0
+IO27
+Text Label 7800 3100 2    50   ~ 0
+IO14
+Text Label 7800 3200 2    50   ~ 0
+IO12
+Text Label 7800 3300 2    50   ~ 0
+IO13
+Text Label 8300 2100 0    50   ~ 0
+IO23
+Text Label 8300 2200 0    50   ~ 0
+IO22
+Text Label 8300 2300 0    50   ~ 0
+IO01
+Text Label 8300 2400 0    50   ~ 0
+IO03
+Text Label 8300 2500 0    50   ~ 0
+IO21
+Text Label 8300 2600 0    50   ~ 0
+IO19
+Text Label 8300 2700 0    50   ~ 0
+IO18
+Text Label 8300 2800 0    50   ~ 0
+IO05
+Text Label 8300 2900 0    50   ~ 0
+IO17
+Text Label 8300 3000 0    50   ~ 0
+IO16
+Text Label 8300 3100 0    50   ~ 0
+IO04
+Text Label 8300 3200 0    50   ~ 0
+IO02
+Text Label 8300 3300 0    50   ~ 0
+IO15
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5FC0CC25
+P 9550 1200
+AR Path="/5FC3847D/5FC0CC25" Ref="J?"  Part="1" 
+AR Path="/5F6FAF6E/5FC0CC25" Ref="J?"  Part="1" 
+AR Path="/5FC0C355/5FC0CC25" Ref="J205"  Part="1" 
+F 0 "J205" H 9630 1192 50  0000 L CNN
+F 1 "VinProt" H 9630 1101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9550 1200 50  0001 C CNN
+F 3 "~" H 9550 1200 50  0001 C CNN
+F 4 "C376075" H 9550 1200 50  0001 C CNN "LCSC"
+	1    9550 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC0CC2B
+P 8450 1200
+AR Path="/5FC3847D/5FC0CC2B" Ref="#PWR?"  Part="1" 
+AR Path="/5F6FAF6E/5FC0CC2B" Ref="#PWR?"  Part="1" 
+AR Path="/5FC0C355/5FC0CC2B" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 8450 950 50  0001 C CNN
+F 1 "GND" H 8455 1027 50  0000 C CNN
+F 2 "" H 8450 1200 50  0001 C CNN
+F 3 "" H 8450 1200 50  0001 C CNN
+	1    8450 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 1200 9350 1200
+Text Label 9150 1300 2    50   ~ 0
+Vin_protected
+Wire Wire Line
+	9350 1300 9150 1300
+$Comp
+L Connector:Conn_01x01_Male P201
+U 1 1 5FC164CA
+P 1400 3850
+F 0 "P201" H 1300 3850 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 3940 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 3850 50  0001 C CNN
+F 3 "~" H 1400 3850 50  0001 C CNN
+	1    1400 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5FC1B3CD
+P 1700 3750
+F 0 "#PWR0102" H 1700 3600 50  0001 C CNN
+F 1 "+3.3V" H 1715 3923 50  0000 C CNN
+F 2 "" H 1700 3750 50  0001 C CNN
+F 3 "" H 1700 3750 50  0001 C CNN
+	1    1700 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3850 1700 3850
+Wire Wire Line
+	1700 3850 1700 3750
+$Comp
+L Connector:Conn_01x01_Male P202
+U 1 1 5FC1EFAE
+P 1400 3950
+F 0 "P202" H 1300 3950 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 4040 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 3950 50  0001 C CNN
+F 3 "~" H 1400 3950 50  0001 C CNN
+	1    1400 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3950 1700 3950
+Wire Wire Line
+	1700 3950 1700 3850
+Connection ~ 1700 3850
+$Comp
+L Connector:Conn_01x01_Male P203
+U 1 1 5FC232BD
+P 2000 3850
+F 0 "P203" H 1900 3850 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 3940 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 3850 50  0001 C CNN
+F 3 "~" H 2000 3850 50  0001 C CNN
+	1    2000 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3850 2300 3850
+$Comp
+L Connector:Conn_01x01_Male P204
+U 1 1 5FC232CB
+P 2000 3950
+F 0 "P204" H 1900 3950 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 4040 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 3950 50  0001 C CNN
+F 3 "~" H 2000 3950 50  0001 C CNN
+	1    2000 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3950 2300 3950
+Wire Wire Line
+	2300 3950 2300 3850
+$Comp
+L power:GND #PWR0104
+U 1 1 5FC25EDF
+P 2300 6350
+F 0 "#PWR0104" H 2300 6100 50  0001 C CNN
+F 1 "GND" H 2305 6177 50  0000 C CNN
+F 2 "" H 2300 6350 50  0001 C CNN
+F 3 "" H 2300 6350 50  0001 C CNN
+	1    2300 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male P205
+U 1 1 5FC3C3E1
+P 1400 4050
+F 0 "P205" H 1300 4050 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 4140 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 4050 50  0001 C CNN
+F 3 "~" H 1400 4050 50  0001 C CNN
+	1    1400 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4050 1700 4050
+Wire Wire Line
+	1700 4050 1700 3950
+$Comp
+L Connector:Conn_01x01_Male P206
+U 1 1 5FC3C3EF
+P 1400 4150
+F 0 "P206" H 1300 4150 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 4240 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 4150 50  0001 C CNN
+F 3 "~" H 1400 4150 50  0001 C CNN
+	1    1400 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4150 1700 4150
+Wire Wire Line
+	1700 4150 1700 4050
+Connection ~ 1700 4050
+$Comp
+L Connector:Conn_01x01_Male P229
+U 1 1 5FC3C3F8
+P 2000 4050
+F 0 "P229" H 1900 4050 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 4140 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 4050 50  0001 C CNN
+F 3 "~" H 2000 4050 50  0001 C CNN
+	1    2000 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4050 2300 4050
+$Comp
+L Connector:Conn_01x01_Male P230
+U 1 1 5FC3C3FF
+P 2000 4150
+F 0 "P230" H 1900 4150 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 4240 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 4150 50  0001 C CNN
+F 3 "~" H 2000 4150 50  0001 C CNN
+	1    2000 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4150 2300 4150
+Wire Wire Line
+	2300 4150 2300 4050
+Wire Wire Line
+	2300 4050 2300 3950
+Connection ~ 2300 4050
+Connection ~ 1700 3950
+Connection ~ 2300 3950
+$Comp
+L Connector:Conn_01x01_Male P207
+U 1 1 5FC4BD1F
+P 1400 4250
+F 0 "P207" H 1300 4250 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 4340 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 4250 50  0001 C CNN
+F 3 "~" H 1400 4250 50  0001 C CNN
+	1    1400 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4250 1700 4250
+Wire Wire Line
+	1700 4250 1700 4150
+$Comp
+L Connector:Conn_01x01_Male P208
+U 1 1 5FC4BD27
+P 1400 4350
+F 0 "P208" H 1300 4350 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 4440 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 4350 50  0001 C CNN
+F 3 "~" H 1400 4350 50  0001 C CNN
+	1    1400 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4350 1700 4350
+Wire Wire Line
+	1700 4350 1700 4250
+Connection ~ 1700 4250
+$Comp
+L Connector:Conn_01x01_Male P231
+U 1 1 5FC4BD30
+P 2000 4250
+F 0 "P231" H 1900 4250 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 4340 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 4250 50  0001 C CNN
+F 3 "~" H 2000 4250 50  0001 C CNN
+	1    2000 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4250 2300 4250
+$Comp
+L Connector:Conn_01x01_Male P232
+U 1 1 5FC4BD37
+P 2000 4350
+F 0 "P232" H 1900 4350 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 4440 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 4350 50  0001 C CNN
+F 3 "~" H 2000 4350 50  0001 C CNN
+	1    2000 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4350 2300 4350
+Wire Wire Line
+	2300 4350 2300 4250
+Wire Wire Line
+	2300 4250 2300 4150
+Connection ~ 2300 4250
+$Comp
+L Connector:Conn_01x01_Male P209
+U 1 1 5FC5092C
+P 1400 4450
+F 0 "P209" H 1300 4450 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 4540 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 4450 50  0001 C CNN
+F 3 "~" H 1400 4450 50  0001 C CNN
+	1    1400 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4450 1700 4450
+Wire Wire Line
+	1700 4450 1700 4350
+$Comp
+L Connector:Conn_01x01_Male P210
+U 1 1 5FC50934
+P 1400 4550
+F 0 "P210" H 1300 4550 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 4640 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 4550 50  0001 C CNN
+F 3 "~" H 1400 4550 50  0001 C CNN
+	1    1400 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4550 1700 4550
+Wire Wire Line
+	1700 4550 1700 4450
+Connection ~ 1700 4450
+$Comp
+L Connector:Conn_01x01_Male P233
+U 1 1 5FC5093D
+P 2000 4450
+F 0 "P233" H 1900 4450 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 4540 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 4450 50  0001 C CNN
+F 3 "~" H 2000 4450 50  0001 C CNN
+	1    2000 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4450 2300 4450
+$Comp
+L Connector:Conn_01x01_Male P234
+U 1 1 5FC50944
+P 2000 4550
+F 0 "P234" H 1900 4550 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 4640 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 4550 50  0001 C CNN
+F 3 "~" H 2000 4550 50  0001 C CNN
+	1    2000 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4550 2300 4550
+Wire Wire Line
+	2300 4550 2300 4450
+Wire Wire Line
+	2300 4450 2300 4350
+Connection ~ 2300 4450
+$Comp
+L Connector:Conn_01x01_Male P211
+U 1 1 5FC55D07
+P 1400 4650
+F 0 "P211" H 1300 4650 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 4740 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 4650 50  0001 C CNN
+F 3 "~" H 1400 4650 50  0001 C CNN
+	1    1400 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4650 1700 4650
+Wire Wire Line
+	1700 4650 1700 4550
+$Comp
+L Connector:Conn_01x01_Male P212
+U 1 1 5FC55D0F
+P 1400 4750
+F 0 "P212" H 1300 4750 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 4840 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 4750 50  0001 C CNN
+F 3 "~" H 1400 4750 50  0001 C CNN
+	1    1400 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4750 1700 4750
+Wire Wire Line
+	1700 4750 1700 4650
+Connection ~ 1700 4650
+$Comp
+L Connector:Conn_01x01_Male P235
+U 1 1 5FC55D18
+P 2000 4650
+F 0 "P235" H 1900 4650 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 4740 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 4650 50  0001 C CNN
+F 3 "~" H 2000 4650 50  0001 C CNN
+	1    2000 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4650 2300 4650
+$Comp
+L Connector:Conn_01x01_Male P236
+U 1 1 5FC55D1F
+P 2000 4750
+F 0 "P236" H 1900 4750 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 4840 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 4750 50  0001 C CNN
+F 3 "~" H 2000 4750 50  0001 C CNN
+	1    2000 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4750 2300 4750
+Wire Wire Line
+	2300 4750 2300 4650
+Wire Wire Line
+	2300 4650 2300 4550
+Connection ~ 2300 4650
+$Comp
+L Connector:Conn_01x01_Male P213
+U 1 1 5FC5BBE8
+P 1400 4850
+F 0 "P213" H 1300 4850 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 4940 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 4850 50  0001 C CNN
+F 3 "~" H 1400 4850 50  0001 C CNN
+	1    1400 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4850 1700 4850
+Wire Wire Line
+	1700 4850 1700 4750
+$Comp
+L Connector:Conn_01x01_Male P214
+U 1 1 5FC5BBF0
+P 1400 4950
+F 0 "P214" H 1300 4950 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 5040 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 4950 50  0001 C CNN
+F 3 "~" H 1400 4950 50  0001 C CNN
+	1    1400 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4950 1700 4950
+Wire Wire Line
+	1700 4950 1700 4850
+Connection ~ 1700 4850
+$Comp
+L Connector:Conn_01x01_Male P237
+U 1 1 5FC5BBF9
+P 2000 4850
+F 0 "P237" H 1900 4850 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 4940 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 4850 50  0001 C CNN
+F 3 "~" H 2000 4850 50  0001 C CNN
+	1    2000 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4850 2300 4850
+$Comp
+L Connector:Conn_01x01_Male P238
+U 1 1 5FC5BC00
+P 2000 4950
+F 0 "P238" H 1900 4950 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 5040 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 4950 50  0001 C CNN
+F 3 "~" H 2000 4950 50  0001 C CNN
+	1    2000 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4950 2300 4950
+Wire Wire Line
+	2300 4950 2300 4850
+Wire Wire Line
+	2300 4850 2300 4750
+Connection ~ 2300 4850
+Wire Wire Line
+	1600 5050 1700 5050
+Wire Wire Line
+	1700 5050 1700 4950
+$Comp
+L Connector:Conn_01x01_Male P216
+U 1 1 5FC62287
+P 1400 5150
+F 0 "P216" H 1300 5150 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 5240 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 5150 50  0001 C CNN
+F 3 "~" H 1400 5150 50  0001 C CNN
+	1    1400 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5150 1700 5150
+Wire Wire Line
+	1700 5150 1700 5050
+Connection ~ 1700 5050
+$Comp
+L Connector:Conn_01x01_Male P239
+U 1 1 5FC62290
+P 2000 5050
+F 0 "P239" H 1900 5050 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 5140 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 5050 50  0001 C CNN
+F 3 "~" H 2000 5050 50  0001 C CNN
+	1    2000 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5050 2300 5050
+$Comp
+L Connector:Conn_01x01_Male P240
+U 1 1 5FC62297
+P 2000 5150
+F 0 "P240" H 1900 5150 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 5240 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 5150 50  0001 C CNN
+F 3 "~" H 2000 5150 50  0001 C CNN
+	1    2000 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5150 2300 5150
+Wire Wire Line
+	2300 5150 2300 5050
+Wire Wire Line
+	2300 5050 2300 4950
+Connection ~ 2300 5050
+$Comp
+L Connector:Conn_01x01_Male P217
+U 1 1 5FC685EC
+P 1400 5250
+F 0 "P217" H 1300 5250 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 5340 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 5250 50  0001 C CNN
+F 3 "~" H 1400 5250 50  0001 C CNN
+	1    1400 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5250 1700 5250
+Wire Wire Line
+	1700 5250 1700 5150
+Wire Wire Line
+	1600 5350 1700 5350
+Wire Wire Line
+	1700 5350 1700 5250
+Connection ~ 1700 5250
+$Comp
+L Connector:Conn_01x01_Male P241
+U 1 1 5FC685FD
+P 2000 5250
+F 0 "P241" H 1900 5250 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 5340 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 5250 50  0001 C CNN
+F 3 "~" H 2000 5250 50  0001 C CNN
+	1    2000 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5250 2300 5250
+Wire Wire Line
+	2200 5350 2300 5350
+Wire Wire Line
+	2300 5350 2300 5250
+Wire Wire Line
+	2300 5250 2300 5150
+Connection ~ 2300 5250
+$Comp
+L Connector:Conn_01x01_Male P242
+U 1 1 5FC68604
+P 2000 5350
+F 0 "P242" H 1900 5350 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 5440 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 5350 50  0001 C CNN
+F 3 "~" H 2000 5350 50  0001 C CNN
+	1    2000 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male P218
+U 1 1 5FC685F4
+P 1400 5350
+F 0 "P218" H 1300 5350 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 5440 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 5350 50  0001 C CNN
+F 3 "~" H 1400 5350 50  0001 C CNN
+	1    1400 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male P219
+U 1 1 5FC8DC38
+P 1400 5450
+F 0 "P219" H 1300 5450 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 5540 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 5450 50  0001 C CNN
+F 3 "~" H 1400 5450 50  0001 C CNN
+	1    1400 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5450 1700 5450
+Wire Wire Line
+	1700 5450 1700 5350
+$Comp
+L Connector:Conn_01x01_Male P220
+U 1 1 5FC8DC40
+P 1400 5550
+F 0 "P220" H 1300 5550 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 5640 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 5550 50  0001 C CNN
+F 3 "~" H 1400 5550 50  0001 C CNN
+	1    1400 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5550 1700 5550
+Wire Wire Line
+	1700 5550 1700 5450
+Connection ~ 1700 5450
+$Comp
+L Connector:Conn_01x01_Male P243
+U 1 1 5FC8DC49
+P 2000 5450
+F 0 "P243" H 1900 5450 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 5540 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 5450 50  0001 C CNN
+F 3 "~" H 2000 5450 50  0001 C CNN
+	1    2000 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5450 2300 5450
+$Comp
+L Connector:Conn_01x01_Male P244
+U 1 1 5FC8DC50
+P 2000 5550
+F 0 "P244" H 1900 5550 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 5640 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 5550 50  0001 C CNN
+F 3 "~" H 2000 5550 50  0001 C CNN
+	1    2000 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5550 2300 5550
+Wire Wire Line
+	2300 5550 2300 5450
+Wire Wire Line
+	2300 5450 2300 5350
+Connection ~ 2300 5450
+$Comp
+L Connector:Conn_01x01_Male P221
+U 1 1 5FC95169
+P 1400 5650
+F 0 "P221" H 1300 5650 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 5740 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 5650 50  0001 C CNN
+F 3 "~" H 1400 5650 50  0001 C CNN
+	1    1400 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5650 1700 5650
+Wire Wire Line
+	1700 5650 1700 5550
+$Comp
+L Connector:Conn_01x01_Male P222
+U 1 1 5FC95171
+P 1400 5750
+F 0 "P222" H 1300 5750 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 5840 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 5750 50  0001 C CNN
+F 3 "~" H 1400 5750 50  0001 C CNN
+	1    1400 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5750 1700 5750
+Wire Wire Line
+	1700 5750 1700 5650
+Connection ~ 1700 5650
+$Comp
+L Connector:Conn_01x01_Male P245
+U 1 1 5FC9517A
+P 2000 5650
+F 0 "P245" H 1900 5650 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 5740 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 5650 50  0001 C CNN
+F 3 "~" H 2000 5650 50  0001 C CNN
+	1    2000 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5650 2300 5650
+$Comp
+L Connector:Conn_01x01_Male P246
+U 1 1 5FC95181
+P 2000 5750
+F 0 "P246" H 1900 5750 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 5840 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 5750 50  0001 C CNN
+F 3 "~" H 2000 5750 50  0001 C CNN
+	1    2000 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5750 2300 5750
+Wire Wire Line
+	2300 5750 2300 5650
+Wire Wire Line
+	2300 5650 2300 5550
+Connection ~ 2300 5650
+$Comp
+L Connector:Conn_01x01_Male P223
+U 1 1 5FC9CFD8
+P 1400 5850
+F 0 "P223" H 1300 5850 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 5940 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 5850 50  0001 C CNN
+F 3 "~" H 1400 5850 50  0001 C CNN
+	1    1400 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5850 1700 5850
+Wire Wire Line
+	1700 5850 1700 5750
+$Comp
+L Connector:Conn_01x01_Male P224
+U 1 1 5FC9CFE0
+P 1400 5950
+F 0 "P224" H 1300 5950 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 6040 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 5950 50  0001 C CNN
+F 3 "~" H 1400 5950 50  0001 C CNN
+	1    1400 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5950 1700 5950
+Wire Wire Line
+	1700 5950 1700 5850
+Connection ~ 1700 5850
+$Comp
+L Connector:Conn_01x01_Male P247
+U 1 1 5FC9CFE9
+P 2000 5850
+F 0 "P247" H 1900 5850 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 5940 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 5850 50  0001 C CNN
+F 3 "~" H 2000 5850 50  0001 C CNN
+	1    2000 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5850 2300 5850
+$Comp
+L Connector:Conn_01x01_Male P248
+U 1 1 5FC9CFF0
+P 2000 5950
+F 0 "P248" H 1900 5950 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 6040 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 5950 50  0001 C CNN
+F 3 "~" H 2000 5950 50  0001 C CNN
+	1    2000 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5950 2300 5950
+Wire Wire Line
+	2300 5950 2300 5850
+Wire Wire Line
+	2300 5850 2300 5750
+Connection ~ 2300 5850
+$Comp
+L Connector:Conn_01x01_Male P225
+U 1 1 5FCA5D7D
+P 1400 6050
+F 0 "P225" H 1300 6050 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 6140 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 6050 50  0001 C CNN
+F 3 "~" H 1400 6050 50  0001 C CNN
+	1    1400 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 6050 1700 6050
+Wire Wire Line
+	1700 6050 1700 5950
+$Comp
+L Connector:Conn_01x01_Male P226
+U 1 1 5FCA5D85
+P 1400 6150
+F 0 "P226" H 1300 6150 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 6240 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 6150 50  0001 C CNN
+F 3 "~" H 1400 6150 50  0001 C CNN
+	1    1400 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 6150 1700 6150
+Wire Wire Line
+	1700 6150 1700 6050
+Connection ~ 1700 6050
+$Comp
+L Connector:Conn_01x01_Male P249
+U 1 1 5FCA5D8E
+P 2000 6050
+F 0 "P249" H 1900 6050 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 6140 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 6050 50  0001 C CNN
+F 3 "~" H 2000 6050 50  0001 C CNN
+	1    2000 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 6050 2300 6050
+$Comp
+L Connector:Conn_01x01_Male P250
+U 1 1 5FCA5D95
+P 2000 6150
+F 0 "P250" H 1900 6150 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 6240 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 6150 50  0001 C CNN
+F 3 "~" H 2000 6150 50  0001 C CNN
+	1    2000 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 6150 2300 6150
+Wire Wire Line
+	2300 6150 2300 6050
+Wire Wire Line
+	2300 6050 2300 5950
+Connection ~ 2300 6050
+$Comp
+L Connector:Conn_01x01_Male P227
+U 1 1 5FCAFCE0
+P 1400 6250
+F 0 "P227" H 1300 6250 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 6340 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 6250 50  0001 C CNN
+F 3 "~" H 1400 6250 50  0001 C CNN
+	1    1400 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 6250 1700 6250
+Wire Wire Line
+	1700 6250 1700 6150
+$Comp
+L Connector:Conn_01x01_Male P228
+U 1 1 5FCAFCE8
+P 1400 6350
+F 0 "P228" H 1300 6350 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1508 6440 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 1400 6350 50  0001 C CNN
+F 3 "~" H 1400 6350 50  0001 C CNN
+	1    1400 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 6350 1700 6350
+Wire Wire Line
+	1700 6350 1700 6250
+Connection ~ 1700 6250
+Wire Wire Line
+	2200 6250 2300 6250
+$Comp
+L Connector:Conn_01x01_Male P252
+U 1 1 5FCAFCF8
+P 2000 6350
+F 0 "P252" H 1900 6350 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2108 6440 50  0001 C CNN
+F 2 "SH-ESP32:ProtoPad-Drill1mm" H 2000 6350 50  0001 C CNN
+F 3 "~" H 2000 6350 50  0001 C CNN
+	1    2000 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 6350 2300 6350
+Wire Wire Line
+	2300 6350 2300 6250
+Wire Wire Line
+	2300 6250 2300 6150
+Connection ~ 2300 6250
+Connection ~ 2300 6350
+Wire Wire Line
+	4400 2850 4400 3250
+Wire Wire Line
+	4700 2850 4700 3250
+Wire Wire Line
+	4700 1650 4700 2050
+Connection ~ 1700 4150
+Connection ~ 1700 4350
+Connection ~ 1700 4550
+Connection ~ 1700 4750
+Connection ~ 1700 4950
+Connection ~ 1700 5150
+Connection ~ 1700 5350
+Connection ~ 1700 5550
+Connection ~ 1700 5750
+Connection ~ 1700 5950
+Connection ~ 1700 6150
+Connection ~ 2300 4150
+Connection ~ 2300 4350
+Connection ~ 2300 4550
+Connection ~ 2300 4750
+Connection ~ 2300 4950
+Connection ~ 2300 5150
+Connection ~ 2300 5350
+Connection ~ 2300 5550
+Connection ~ 2300 5750
+Connection ~ 2300 5950
+Connection ~ 2300 6150
+$EndSCHEMATC
